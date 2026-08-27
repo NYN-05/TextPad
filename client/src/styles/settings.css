@@ -1,0 +1,287 @@
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 150ms var(--ease);
+  padding: var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left);
+}
+
+.settings-dialog {
+  width: min(520px, calc(100vw - 32px));
+  max-height: min(calc(100vh - 64px), calc(100dvh - 64px));
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  animation: scaleIn 250ms var(--spring);
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-4) var(--sp-6);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.settings-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.settings-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  min-width: 34px;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  transition: background 150ms var(--ease), color 150ms var(--ease);
+}
+
+.settings-close:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.settings-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  overscroll-behavior: contain;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.settings-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.settings-row-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.settings-row-label {
+  font-size: 13px;
+  color: var(--text-primary);
+  min-width: 0;
+}
+
+.settings-row-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.settings-select {
+  padding: var(--sp-1) var(--sp-3);
+  font-size: 13px;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-sm);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 150ms var(--ease), box-shadow 150ms var(--ease);
+  min-height: 32px;
+  min-width: 120px;
+}
+
+.settings-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-alpha);
+}
+
+.settings-input {
+  padding: var(--sp-1) var(--sp-3);
+  font-size: 13px;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-sm);
+  outline: none;
+  min-height: 32px;
+  min-width: 160px;
+}
+
+.settings-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-alpha);
+}
+
+.settings-range {
+  width: 120px;
+  accent-color: var(--color-primary);
+  height: 4px;
+  cursor: pointer;
+}
+
+.settings-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 120ms var(--spring);
+}
+
+.settings-range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.settings-checkbox {
+  width: 40px;
+  height: 22px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--border-base);
+  border-radius: 11px;
+  cursor: pointer;
+  position: relative;
+  transition: background 200ms var(--ease);
+  flex-shrink: 0;
+}
+
+.settings-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-primary);
+  border-radius: 50%;
+  transition: transform 200ms var(--spring), background 200ms var(--ease);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.settings-checkbox:checked {
+  background: var(--color-primary);
+}
+
+.settings-checkbox:checked::after {
+  transform: translateX(18px);
+  background: #fff;
+}
+
+.settings-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--sp-3) var(--sp-6);
+  border-top: 1px solid var(--border-subtle);
+  gap: var(--sp-2);
+  flex-shrink: 0;
+}
+
+.settings-btn {
+  padding: var(--sp-2) var(--sp-4);
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 150ms var(--ease), border-color 150ms var(--ease);
+  min-height: 32px;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.settings-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-base);
+}
+
+.settings-btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.settings-btn-primary:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+@media (max-width: 640px) {
+  .settings-dialog {
+    width: 100vw;
+    max-height: 100vh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
+  }
+  .settings-overlay {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+}
+
+@media (max-width: 400px) {
+  .settings-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-2);
+  }
+  .settings-body {
+    padding: var(--sp-4);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .settings-close,
+  .settings-btn,
+  .settings-select {
+    min-height: 44px;
+  }
+  .settings-checkbox {
+    width: 48px;
+    height: 26px;
+  }
+  .settings-checkbox::after {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 3px;
+  }
+  .settings-checkbox:checked::after {
+    transform: translateX(22px);
+  }
+}

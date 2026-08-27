@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: textpad-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_SECRET
+        generateValue: true
+      - key: TRUST_PROXY
+        value: "1"
+      - key: CORS_ORIGINS
+        value: https://textpad.vercel.app

@@ -1,0 +1,112 @@
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: color-mix(in srgb, var(--bg-base) 60%, transparent);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 150ms var(--ease);
+  padding: var(--sp-4);
+}
+
+.confirm-dialog {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-6);
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-3);
+  animation: scaleIn 200ms var(--spring);
+}
+
+.confirm-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-danger-alpha);
+  color: var(--color-danger);
+}
+
+.confirm-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.confirm-message {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: var(--sp-2);
+  margin-top: var(--sp-2);
+  width: 100%;
+}
+
+.confirm-btn {
+  flex: 1;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms var(--ease);
+  font-family: inherit;
+  min-height: 36px;
+}
+
+.confirm-btn-cancel {
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-base);
+}
+
+.confirm-btn-cancel:hover {
+  background: var(--bg-input);
+  color: var(--text-primary);
+}
+
+.confirm-btn-danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+.confirm-btn-danger:hover {
+  opacity: 0.9;
+}
+
+.confirm-btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.confirm-btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+@media (max-width: 400px) {
+  .confirm-dialog {
+    padding: var(--sp-5);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .confirm-btn {
+    min-height: 44px;
+  }
+}

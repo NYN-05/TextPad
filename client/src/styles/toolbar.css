@@ -1,0 +1,213 @@
+.toolbar {
+  height: var(--nav-height);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 6px;
+  z-index: 20;
+  user-select: none;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  min-width: 0;
+  overflow: hidden;
+}
+
+.toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  overflow: hidden;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  flex-shrink: 0;
+}
+
+.toolbar-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  transition: background 150ms var(--ease), color 150ms var(--ease);
+}
+
+.toolbar-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.toolbar-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.toolbar-logo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 0 var(--sp-1);
+  flex-shrink: 0;
+}
+
+.toolbar-logo svg {
+  flex-shrink: 0;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--border-base);
+  margin: 0 var(--sp-1);
+  flex-shrink: 0;
+}
+
+.toolbar-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: background 150ms var(--ease), box-shadow 200ms var(--ease), transform 150ms var(--spring);
+  white-space: nowrap;
+  min-height: 30px;
+}
+
+.toolbar-action:hover {
+  background: var(--color-primary-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.toolbar-action:active {
+  transform: scale(0.97);
+}
+
+.toolbar-action:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.toolbar-icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  transition: background 150ms var(--ease), color 150ms var(--ease), transform 150ms var(--spring);
+  position: relative;
+}
+
+.toolbar-icon-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.toolbar-icon-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.toolbar-icon-btn.active {
+  color: var(--color-primary);
+  background: var(--color-primary-alpha);
+}
+
+.toolbar-sync-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.toolbar-sync-dot.syncing {
+  background: var(--color-warning);
+  color: var(--color-warning);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.toolbar-sync-dot.synced {
+  background: var(--color-success);
+  color: var(--color-success);
+}
+
+.toolbar-sync-dot.failed {
+  background: var(--color-danger);
+  color: var(--color-danger);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.toolbar-sync-dot.offline {
+  background: var(--text-muted);
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .toolbar-action svg + span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolbar {
+    padding: 0 6px;
+    gap: 2px;
+  }
+  .toolbar-action {
+    padding: 4px 6px;
+  }
+  .toolbar-action span {
+    display: none;
+  }
+  .toolbar-logo span {
+    display: none;
+  }
+  .toolbar-divider {
+    margin: 0 2px;
+  }
+  .toolbar-icon-btn.desktop-only {
+    display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .toolbar-btn, .toolbar-icon-btn, .toolbar-action {
+    min-height: 40px;
+    min-width: 40px;
+  }
+}

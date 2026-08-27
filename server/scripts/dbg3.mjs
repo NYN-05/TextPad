@@ -1,0 +1,11 @@
+import { createRequire } from "node:module";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const clientRequire = createRequire(join(__dirname, "../../client/package.json"));
+const { diff, patch } = clientRequire("jsondiffpatch");
+console.log("patching...");
+const t0 = Date.now();
+const d = diff("hello world", "hello world, from B");
+const r = patch("hello world", d);
+console.log("done in", Date.now() - t0, "ms:", JSON.stringify(r));

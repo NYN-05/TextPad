@@ -1,0 +1,67 @@
+{
+  "tag": "baseline",
+  "typing": {
+    "small": {
+      "wallMs": 931.6,
+      "stats": {
+        "commits": 85,
+        "totalMs": 657.4000000432134,
+        "byId": {
+          "app": {
+            "count": 85,
+            "ms": 657.4000000432134
+          }
+        }
+      },
+      "longtasks": [
+        {
+          "start": 2141,
+          "dur": 293
+        },
+        {
+          "start": 2618,
+          "dur": 58
+        }
+      ]
+    },
+    "big": {
+      "wallMs": 887.5,
+      "stats": {
+        "commits": 82,
+        "totalMs": 813.0000000149012,
+        "byId": {
+          "app": {
+            "count": 82,
+            "ms": 813.0000000149012
+          }
+        }
+      },
+      "longtasks": [
+        {
+          "start": 2352,
+          "dur": 283
+        },
+        {
+          "start": 2809,
+          "dur": 50
+        },
+        {
+          "start": 3235,
+          "dur": 258
+        },
+        {
+          "start": 4062,
+          "dur": 199
+        },
+        {
+          "start": 4321,
+          "dur": 50
+        }
+      ]
+    },
+    "crypto": {
+      "encMs": 22.4,
+      "decMs": 15.8
+    }
+  }
+}

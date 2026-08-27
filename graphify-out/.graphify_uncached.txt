@@ -1,0 +1,15 @@
+C:\Users\JHASHANK\Downloads\TextPad\AGENTS.md
+C:\Users\JHASHANK\Downloads\TextPad\DEPENDENCY_REPORT.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\API.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\ARCHITECTURE.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\CONTRIBUTING.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\DEPLOYMENT.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\FILE_MAP.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\PRIVACY.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\SECURITY.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\TextPad Security Audit Report.md
+C:\Users\JHASHANK\Downloads\TextPad\PENTEST_REPORT.md
+C:\Users\JHASHANK\Downloads\TextPad\PERF_REPORT.md
+C:\Users\JHASHANK\Downloads\TextPad\client\index.html
+C:\Users\JHASHANK\Downloads\TextPad\react-doctor-report.md
+C:\Users\JHASHANK\Downloads\TextPad\server\render.yaml
