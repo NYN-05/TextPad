@@ -49,7 +49,7 @@ website_1_prod/
 │       ├── index.css                # Global styles, @font-face, CSS variables, reset
 │       ├── vite-env.d.ts            # Vite client types + ImportMetaEnv (VITE_API_URL)
 │       ├── types.ts                 # Core interfaces: LocalFile, SyncOp, KeyBlob, SyncCredentials
-│       ├── db.ts                    # IndexedDB v4 (db "textpad", 3 stores), CRUD, encryptContent/decryptContent, sync queue + credential helpers
+│       ├── db.ts                    # IndexedDB v4 (db "textpad", 4 stores), CRUD, encryptContent/decryptContent, sync queue + credential helpers
 │       ├── sw.ts                    # Service Worker: Workbox precache, network-first API/nav, cache-first assets
 │       │
 │       ├── components/
@@ -147,7 +147,7 @@ website_1_prod/
 │       ├── store.js                 # In-memory Map cache + SQLite persistence via Proxy objects (flush on mutation)
 │       ├── database.js              # SQLite singleton (WAL), 4 tables: devices, files, file_versions, device_files
 │       ├── logger.js                # Pino logger, request logging, header redaction
-│       └── limits.js                # Constants: 1000 files/dev, 50 versions/file, 100 ops/req, 128 name max, 1MB patch max
+│       └── limits.js                # Constants: 1000 files/dev, 50 versions/file, 100 ops/req, 128 name max, 1.5MB patch max
 ```
 
 ---
@@ -192,5 +192,5 @@ website_1_prod/
 | **CSS files** | 13 |
 | **Server endpoints** | 6 |
 | **Middleware** | 5 |
-| **IndexedDB stores** | 3 (v4 schema) |
+| **IndexedDB stores** | 4 (v4 schema) |
 | **SQLite tables** | 4 (devices, files, file_versions, device_files) |

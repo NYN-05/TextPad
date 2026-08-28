@@ -1,6 +1,6 @@
 # Privacy Policy — TextPad
 
-**Last updated:** 2026-07-29
+**Last updated:** 2026-08-28
 
 ## Data Collection
 TextPad does **not** collect, store, or transmit any personally identifiable information (PII).  

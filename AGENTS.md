@@ -80,7 +80,7 @@ Rate limiters (`server/middleware/rateLimit.js`) all skip localhost.
 - HMAC-SHA256 tokens (`server/middleware/auth.js`). No user accounts.
 - `API_SECRET` env var auto-generated if unset (logged at startup). Set a FIXED value in production — generated secrets invalidate all tokens on restart.
 - `CORS_ORIGINS` env (comma-separated) extends the default localhost origins; client base URL comes from `VITE_API_URL` (client build env; unset → Vite dev proxy).
-- Limits (`server/lib/limits.js`): 1000 files/device, 50 versions/file, 100 ops/request, max name length 128, max patch size 1MB
+- Limits (`server/lib/limits.js`): 1000 files/device, 50 versions/file, 100 ops/request, max name length 128, max patch size 1.5MB
 
 ## Conventions
 

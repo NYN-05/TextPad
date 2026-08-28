@@ -74,6 +74,7 @@ SETTINGS.cloudSync && engineRef empty?
 | `files` | `id` | File content + metadata + `baseContent` (v4) |
 | `sync_queue` | autoIncrement | Pending sync operations (superseded per file) |
 | `keychain` | `key` | Crypto key blobs + persisted `sync-credentials` |
+| `sync_meta` | `key` | Sync metadata (staleness cache, etc.) |
 
 ### 2.2 File record (`LocalFile`, `client/src/db.ts`)
 
@@ -274,7 +275,7 @@ The server can still serve `client/dist` when present (single-machine mode), but
 │                         BROWSER (client)                          │
 │                                                                  │
 │  React UI ◄── App.tsx ◄── IndexedDB v4 (files, sync_queue,       │
-│  (editor,       │            keychain + sync-credentials)        │
+│  (editor,       │            keychain, sync_meta, sync-credentials)        │
 │   dashboard,    ├── useAutosave → local save (always)            │
 │   search...)    ├── encryption (AES-256-GCM, client-side only)   │
 │                 ├── search / stats / backup / validation         │
