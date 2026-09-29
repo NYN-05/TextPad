@@ -65,9 +65,9 @@ SETTINGS.cloudSync && engineRef empty?
 
 ---
 
-## 2. Storage Layer — IndexedDB v4
+## 2. Storage Layer — IndexedDB v5
 
-### 2.1 Database: `"textpad"` version 4
+### 2.1 Database: `"textpad"` version 5
 
 | Store | Key | Purpose |
 |---|---|---|

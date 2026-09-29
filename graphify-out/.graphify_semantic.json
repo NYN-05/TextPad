@@ -1,0 +1,956 @@
+{
+  "nodes": [
+    {
+      "id": "agents_textpad",
+      "label": "TextPad",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_local_first",
+      "label": "Local-First Architecture",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_client_primary",
+      "label": "Client as Primary Execution Environment",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_server_minimal",
+      "label": "Server as Sync/Backup Layer",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_indexeddb",
+      "label": "IndexedDB v4 (textpad)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_sync_engine",
+      "label": "SyncEngine (Batched Delta Sync)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_encryption",
+      "label": "AES-256-GCM Encryption",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_enc_prefix",
+      "label": "~enc~ Prefix Protocol",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_autosave",
+      "label": "500ms Debounced Autosave",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_sendbeacon",
+      "label": "navigator.sendBeacon Flush",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_hmac_auth",
+      "label": "HMAC-SHA256 Authentication",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_rate_limits",
+      "label": "Rate Limiting (120/min sync, 5/hr register)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_golden_rule",
+      "label": "Golden Rule (Decision Hierarchy)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_engineering_rules",
+      "label": "Engineering Rules (43 sections)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_app_init",
+      "label": "Application Initialization Flow",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_main_tsx",
+      "label": "client/src/main.tsx (Entry Point)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_app_tsx",
+      "label": "client/src/App.tsx (Central Orchestrator)",
+      "file_type": "code",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_hooks",
+      "label": "Custom Hooks (useFileStore, useAutosave, useCrypto, etc.)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_indexeddb_v4",
+      "label": "IndexedDB v4 Schema (files, sync_queue, keychain, sync_meta)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_localfile",
+      "label": "LocalFile Interface (id, name, content, baseContent, version)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_basecontent",
+      "label": "baseContent (Diff Baseline)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_sync_engine",
+      "label": "SyncEngine (enqueue/flush/pull/beacon)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_delta_sync",
+      "label": "Batched Delta Sync (jsondiffpatch)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_web_worker",
+      "label": "Web Worker (Off-thread Diff/Patch)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_server_sqlite",
+      "label": "Server SQLite (better-sqlite3 WAL)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_encryption_layer",
+      "label": "Encryption Layer (AES-256-GCM, Graceful Degradation)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_keychain",
+      "label": "Keychain (Key Lifecycle, AES-KW/PBKDF2)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_service_worker",
+      "label": "Service Worker (Workbox injectManifest)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arch_env_vars",
+      "label": "Environment Variables (VITE_API_URL, API_SECRET, CORS_ORIGINS)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_register",
+      "label": "POST /api/sync/register (Device Registration)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_sync_post",
+      "label": "POST /api/sync (Batched Delta Sync)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_sync_get",
+      "label": "GET /api/sync (Metadata List)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_sync_pull",
+      "label": "GET /api/sync/:fileId?since=N (Version History)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_sync_delete",
+      "label": "DELETE /api/sync/:fileId (File Deletion)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_op_types",
+      "label": "Op Types (delta, snapshot, metadata, delete)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_version_semantics",
+      "label": "Version Semantics (append/replace/prune)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "api_security_headers",
+      "label": "Security Headers (CSP, HSTS, etc.)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "contrib_contributing",
+      "label": "Contributing Guidelines",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\CONTRIBUTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "deploy_deployment",
+      "label": "Deployment (Vercel + Render)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\DEPLOYMENT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "filemap_file_map",
+      "label": "File Map (Project Structure)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\FILE_MAP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "privacy_privacy",
+      "label": "Privacy Policy",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\PRIVACY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "security_security",
+      "label": "Security Model",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\SECURITY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "audit_security_audit",
+      "label": "Security Audit Report",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\TextPad Security Audit Report.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "enhance_enhancement",
+      "label": "Enhancement Plan",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\ENHANCEMENT_PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_textpad",
+      "target": "agents_local_first",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_textpad",
+      "target": "agents_client_primary",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_textpad",
+      "target": "agents_server_minimal",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_local_first",
+      "target": "agents_indexeddb",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_local_first",
+      "target": "agents_sync_engine",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_local_first",
+      "target": "agents_encryption",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_local_first",
+      "target": "agents_autosave",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_sync_engine",
+      "target": "agents_sendbeacon",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_encryption",
+      "target": "agents_enc_prefix",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_server_minimal",
+      "target": "agents_hmac_auth",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_server_minimal",
+      "target": "agents_rate_limits",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_textpad",
+      "target": "agents_golden_rule",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_textpad",
+      "target": "agents_engineering_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_app_init",
+      "target": "arch_main_tsx",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_app_init",
+      "target": "arch_app_tsx",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_app_tsx",
+      "target": "arch_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_app_tsx",
+      "target": "arch_indexeddb_v4",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_app_tsx",
+      "target": "arch_sync_engine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_indexeddb_v4",
+      "target": "arch_localfile",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_localfile",
+      "target": "arch_basecontent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_sync_engine",
+      "target": "arch_delta_sync",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_delta_sync",
+      "target": "arch_web_worker",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_server_sqlite",
+      "target": "arch_sync_engine",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_encryption_layer",
+      "target": "arch_keychain",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_service_worker",
+      "target": "arch_indexeddb_v4",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_register",
+      "target": "api_sync_post",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_sync_post",
+      "target": "api_op_types",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_sync_post",
+      "target": "api_version_semantics",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_sync_get",
+      "target": "api_sync_pull",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_sync_delete",
+      "target": "api_sync_post",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "api_security_headers",
+      "target": "api_sync_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_sync_engine",
+      "target": "arch_sync_engine",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_encryption",
+      "target": "arch_encryption_layer",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_indexeddb",
+      "target": "arch_indexeddb_v4",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_sendbeacon",
+      "target": "arch_app_tsx",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_hmac_auth",
+      "target": "api_register",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rate_limits",
+      "target": "api_sync_post",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_sync_engine",
+      "target": "api_sync_post",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_delta_sync",
+      "target": "api_op_types",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arch_version_semantics",
+      "target": "api_version_semantics",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "local_first_stack",
+      "label": "Local-First Architecture Stack",
+      "nodes": [
+        "agents_local_first",
+        "agents_client_primary",
+        "agents_server_minimal",
+        "agents_indexeddb",
+        "agents_encryption",
+        "agents_sync_engine"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md"
+    },
+    {
+      "id": "sync_pipeline",
+      "label": "Sync Pipeline",
+      "nodes": [
+        "arch_sync_engine",
+        "arch_delta_sync",
+        "arch_web_worker",
+        "api_sync_post",
+        "api_version_semantics",
+        "agents_sendbeacon"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\ARCHITECTURE.md"
+    },
+    {
+      "id": "encryption_stack",
+      "label": "Encryption Stack",
+      "nodes": [
+        "agents_encryption",
+        "agents_enc_prefix",
+        "arch_encryption_layer",
+        "arch_keychain",
+        "arch_basecontent"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\AGENTS.md"
+    },
+    {
+      "id": "api_endpoints",
+      "label": "Sync API Endpoints",
+      "nodes": [
+        "api_register",
+        "api_sync_post",
+        "api_sync_get",
+        "api_sync_pull",
+        "api_sync_delete"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\JHASHANK\\Downloads\\TextPad\\Docs\\API.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

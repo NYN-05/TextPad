@@ -1,0 +1,12 @@
+C:\Users\JHASHANK\Downloads\TextPad\AGENTS.md
+C:\Users\JHASHANK\Downloads\TextPad\CONTRIBUTING.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\API.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\ARCHITECTURE.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\DEPLOYMENT.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\FILE_MAP.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\PRIVACY.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\SECURITY.md
+C:\Users\JHASHANK\Downloads\TextPad\Docs\TextPad Security Audit Report.md
+C:\Users\JHASHANK\Downloads\TextPad\ENHANCEMENT_PLAN.md
+C:\Users\JHASHANK\Downloads\TextPad\client\index.html
+C:\Users\JHASHANK\Downloads\TextPad\server\render.yaml

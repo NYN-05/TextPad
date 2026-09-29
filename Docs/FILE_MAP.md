@@ -8,7 +8,6 @@ website_1_prod/
 ├── Docs/
 │   ├── ARCHITECTURE.md              # Architecture & code flow reference
 │   ├── API.md                       # REST API reference
-│   ├── CONTRIBUTING.md              # Contribution guidelines
 │   ├── DEPLOYMENT.md                # Vercel + Render deployment guide
 │   ├── FILE_MAP.md                  ◀ (this file)
 │   ├── PRIVACY.md                   # Privacy policy
@@ -192,5 +191,5 @@ website_1_prod/
 | **CSS files** | 13 |
 | **Server endpoints** | 6 |
 | **Middleware** | 5 |
-| **IndexedDB stores** | 4 (v4 schema) |
+| **IndexedDB stores** | 4 (v5 schema) |
 | **SQLite tables** | 4 (devices, files, file_versions, device_files) |

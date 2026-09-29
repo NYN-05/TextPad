@@ -92,10 +92,10 @@ Rate limiters (`server/middleware/rateLimit.js`) all skip localhost.
 
 ## Other
 
-- `updateFile()` in `db.ts:122` reads-then-writes (get + Object.assign + put) inside a single transaction
-- `deleteFile()` in `db.ts:143` returns `void` (wraps `IDBRequest` with `.then(() => undefined)`)
+- `updateFile()` in `db.ts:165` reads-then-writes (get + Object.assign + put) inside a single transaction
+- `deleteFile()` in `db.ts:228` returns `void` (wraps `IDBRequest` with `.then(() => undefined)`)
 - CSP is strict (`default-src 'self'`) — no inline scripts, no external CDN fonts
-- More detailed docs in `Docs/` (API.md, ARCHITECTURE.md, CONTRIBUTING.md, DEPLOYMENT.md, FILE_MAP.md, PRIVACY.md, SECURITY.md)
+- More detailed docs in `Docs/` (API.md, ARCHITECTURE.md, DEPLOYMENT.md, FILE_MAP.md, PRIVACY.md, SECURITY.md)
 - No `.gitignore` at root; no git repo initialized — `client/` and `server/` each carry their own `.gitignore` for their separate deploy repos
 
 ## Engineering Rules (always apply to every change)
@@ -256,8 +256,8 @@ Before considering a feature complete: simplest correct solution? existing solut
 
 ### 21. Storage & IndexedDB best practices
 
-- **21.1** Keep the IndexedDB schema versioned (`textpad`, v4) and migrate explicitly in `onupgradeneeded`; never break old databases silently.
-- **21.2** Use single-transaction read-then-write patterns (as in `updateFile()` at `db.ts:122`) to keep records consistent; never write partial records.
+- **21.1** Keep the IndexedDB schema versioned (`textpad`, v5) and migrate explicitly in `onupgradeneeded`; never break old databases silently.
+- **21.2** Use single-transaction read-then-write patterns (as in `updateFile()` at `db.ts:165`) to keep records consistent; never write partial records.
 - **21.3** Keep per-record operations bounded: use keys/indexes, avoid full-store scans, and never load every file's content into memory at once.
 - **21.4** Content stored in IndexedDB is encrypted at rest (with the documented cleartext degradation only when `crypto.subtle` is unavailable).
 - **21.5** Respect browser storage limits and eviction: keep the data model lean, drop stale versions, and treat storage quota errors as recoverable failures.
